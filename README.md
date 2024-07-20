@@ -1,1 +1,2 @@
-# pipeline-java-1
+# Files for Apasoft Training course
+## Pipelines section
