@@ -6,14 +6,14 @@ pipeline {
             steps {
                 echo 'Building...'
                 // Compile the Java code
-                sh 'javac -d target ToUpper.java'
+                bat 'javac -d target ToUpper.java'
             }
         }       
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
                 // Run the Java program with an example argument
-                sh 'java -cp target ToUpper "example text"'
+                bat 'java -cp target ToUpper "example text"'
             }
         }
     }
